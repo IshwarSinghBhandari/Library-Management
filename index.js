@@ -16,6 +16,9 @@ app.use("/auth",userRouter);
 
 app.use("/books",bookRouter)
 
+app.get('/', (req, res) => {
+    res.send("Hello World!");
+});
 //start the server
 const startseverr = async()=>{
 //function call to connect database
